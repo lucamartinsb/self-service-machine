@@ -64,3 +64,12 @@ var products = [
     }
 ];
  
+const selfServiceMachine = {
+    data() {
+        return {  
+            products: window.products 
+        }
+    }
+}
+
+Vue.createApp(selfServiceMachine).mount('#app')
